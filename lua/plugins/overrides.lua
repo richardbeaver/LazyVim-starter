@@ -14,6 +14,8 @@ return {
       -- events = { "BufWritePost", "BufReadPost", "InsertLeave" },
       linters_by_ft = {
         python = { "pylint" },
+        cpp = { "cppcheck" },
+        c = { "cppcheck" },
         -- fish = { "fish" },
         -- Use the "*" filetype to run linters on all filetypes.
         -- ['*'] = { 'global linter' },
