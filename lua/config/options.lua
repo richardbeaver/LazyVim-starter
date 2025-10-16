@@ -9,6 +9,12 @@ vim.g.lazyvim_python_lsp = "basedpyright"
 -- Visual column at 80 characters
 vim.o.colorcolumn = "80"
 
+vim.diagnostic.config({
+  float = {
+    source = "always", -- "always" | "if_many" | false
+  },
+})
+
 -- Keep tabs and indentation of 4 for justfiles
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "just",
